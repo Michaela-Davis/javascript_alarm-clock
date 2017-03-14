@@ -6,18 +6,17 @@ this.alarmHour = alarmHour;
 
 Alarm.prototype.setAlarm = function(alarmHour, alarmMinute, momentHour, momentMinute) {
   if (alarmHour === momentHour && alarmMinute === momentMinute) {
-    this.soundAlarm();
-    return;
+    alert("Your alarm is going off.");
   }
 };
 
-Alarm.prototype.soundAlarm = function() {
-    alert("Your alarm is going off.");
-    // var snd = new Audio("");
-    // return function() {
-    //     snd.play();
-    //}
-// });();
-};
+// Alarm.prototype.soundAlarm = function() {
+//     alert("Your alarm is going off.");
+//     // var snd = new Audio("");
+//     // return function() {
+//     //     snd.play();
+//     //}
+// // });();
+// };
 
 exports.alarmModule = Alarm;
