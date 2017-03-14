@@ -4,8 +4,8 @@ this.alarmHour = alarmHour;
 }
 
 
-Alarm.prototype.setAlarm = function(alarmHour, alarmMinute, momentHour, momentMinute) {
-  if (alarmHour === momentHour && alarmMinute === momentMinute) {
+Alarm.prototype.setAlarm = function(showTime, showMoment) {
+  if (showTime == showMoment) {
     alert("Your alarm is going off.");
   }
 };
